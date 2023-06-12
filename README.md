@@ -4,6 +4,10 @@ Inspired by the work of Mike Bostock's [Towards Reusable Charts](http://bost.ock
 
 [View Examples](http://nvd3-community.github.io/nvd3/) | [NEW Documentation!](http://nvd3-community.github.io/nvd3/examples/documentation.html) | Development build status: [![Build Status](https://travis-ci.org/novus/nvd3.svg?branch=master)](https://travis-ci.org/novus/nvd3)
 
+## FORKED REPO!
+
+This is a forked repo from [nvd3](https://github.com/novus/nvd3) check here for updates. I forked this repo in order to work on upgrading **d3.js** higher than V3.
+
 
 ## Usage
 Simply add the `nv.d3` assets to your project and include them in your HTML.
@@ -141,7 +145,7 @@ If you'd like to contribute consistently, show me what you've got with some good
 4. Bug fixes should come with unit tests that prove their fix
 
 If you want to test your changes using the example pages,
-you'll have to run `grunt production` to build the items into the `build` directory.
+you'll have to run `npm run build-prod` to build the items into the `build` directory.
 You must do this before your changes show up in the examples, as they link to the build directory
 in order to properly show off the finished product.
 Please remember to NOT include the build files in your commit though,
@@ -149,9 +153,10 @@ only include the source files you changed!
 
 ### Tips for Testing
 * Unit tests were written in Karma and Mocha. Follow instructions in **Building Latest** to get npm packages setup. This may not work on Windows machines.
-* Run `bower install` to get bower dependencies.
-* Run `grunt` to start the unit tests.
+* Run `npm run bower` to get bower dependencies.
+* Run `npm run grunt` to start the unit tests.
 * Also visually inspect the HTML pages in the **examples/ and test/ folders**.  Make sure there are no glaring errors.
+* * Start here [site.html](./examples/site.html) then compare with [examples](http://nvd3-community.github.io/nvd3/)
 * Novus now uses Travis CI for continuous integration. Visit [our travis build page](https://travis-ci.org/novus/nvd3/) to see the latest status.
 
 #### Meteor Tinytests
@@ -164,8 +169,8 @@ only include the source files you changed!
 ## Building latest
 
 1. First clone the repository and checkout the `master` branch
-2. make sure `nodejs` is installed via your system's package manager.
-3. Install `grunt`, `grunt-cli`, and `bower`:  `npm install -g grunt grunt-cli bower`
+2. Install `nodejs` to the project's correct version using `n auto`. If needed **n** is needed install with `npm install -g n`. This looks at [.n-node-version](.n-node-version) for the project's version.
+3. Install Chrome Appplication for the Karma tests to run with.
 
 > have node download nvd3's required modules with:  `npm install`
 

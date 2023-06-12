@@ -119,7 +119,7 @@ module.exports = function(grunt) {
             unit: {
                 options: {
                     logLevel: 'DEBUG',
-                    browsers: ['Firefox'],
+                    browsers: ['Chrome'],
                     browserNoActivityTimeout: 60000,
                     browserDisconnectTimeout: 60000,
                     captureTimeout: 60000,

@@ -1,16 +1,18 @@
 {
   "name": "nvd3",
-  "version": "1.8.6-dev",
+  "version": "1.8.6-gabe",
   "description": "A reusable charting library written in d3.js",
-  "url": "https://github.com/novus/nvd3",
+  "url": "https://github.com/GabeGates/nvd3",
   "main": "build/nv.d3.js",
   "scripts": {
     "test": "grunt",
-    "build": "grunt"
+    "build": "grunt",
+    "build-prod": "grunt production",
+    "bower": "bower install"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/novus/nvd3"
+    "url": "https://github.com/GabeGates/nvd3"
   },
   "keywords": [
     "nvd3",
@@ -23,8 +25,12 @@
   "peerDependencies": {
     "d3": "^3.4.4"
   },
+  "engines": {
+    "node": "=18.16.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.5.0",
+    "bower": "^1.8.14",
     "es6-promise": "^4.0.3",
     "grunt": "^0.4.5",
     "grunt-cli": "^1.2.0",
@@ -34,13 +40,13 @@
     "grunt-contrib-jshint": "^0.11.0",
     "grunt-contrib-uglify": "~0.9.1",
     "grunt-contrib-watch": "~0.3.1",
-    "grunt-karma": "^0.9.0",
+    "grunt-karma": "^3.0.2",
     "grunt-postcss": "^0.8.0",
     "grunt-text-replace": "^0.4.0",
-    "karma": "^0.12.23",
-    "karma-chrome-launcher": "^0.1.4",
-    "karma-coffee-preprocessor": "^0.2.1",
-    "karma-coverage": "^0.2.6",
+    "karma": "^3.1.4",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coffee-preprocessor": "^1.0.1",
+    "karma-coverage": "^1.1.2",
     "karma-firefox-launcher": "^0.1.4",
     "karma-junit-reporter": "^0.2.2",
     "karma-mocha": "^0.1.9",
